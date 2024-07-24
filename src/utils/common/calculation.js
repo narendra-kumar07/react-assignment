@@ -1,9 +1,9 @@
-export const calculatePonits = (amt) => {
+export const calculatePonits = (transactionAmount) => {
     let points = 0;
-    if (amt > 100) {    
-      points = 2*(amt-100)+50;
-    } else if (amt > 50 && amt<=100) {
-      points = amt - 50;      
+    if (transactionAmount > 100) {    
+      points = 2*(transactionAmount-100)+50;
+    } else if (transactionAmount > 50 && transactionAmount<=100) {
+      points = transactionAmount - 50;      
     }
     else{
       points = 0;
